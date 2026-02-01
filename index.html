@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Slimtrimlifestyle with Mona</title>
+  <meta name="description" content="Slimtrimlifestyle with Mona – Wellness, nutrition support & lifestyle business. Work from home, travel & earn." />
+
+  <style>
+    :root{
+      --bg:#f7f6f3;
+      --card:#ffffff;
+      --text:#2f2f2f;
+      --muted:#6f6f6f;
+      --accent:#b8cbb1;     /* soft green */
+      --accent2:#e6dace;    /* soft beige */
+      --line:#e5e5e5;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 10% 0%, #eef3ec, transparent 60%),
+        radial-gradient(700px 500px at 90% 10%, #f3eee9, transparent 55%),
+        var(--bg);
+      line-height:1.6;
+    }
+
+    a{text-decoration:none;color:inherit}
+
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+    header{
+      position:sticky;
+      top:0;
+      background:rgba(247,246,243,.85);
+      backdrop-filter: blur(8px);
+      border-bottom:1px solid var(--line);
+      z-index:10;
+    }
+
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .brand{
+      font-weight:800;
+      letter-spacing:.3px;
+    }
+
+    .nav a{
+      font-weight:600;
+      color:var(--muted);
+    }
+
+    .nav a:hover{color:var(--text)}
+
+    .hero{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:22px;
+      padding:36px 0;
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:22px;
+      padding:26px;
+      box-shadow:0 20px 40px rgba(0,0,0,.06);
+    }
+
+    h1{
+      margin:0 0 12px;
+      font-size:36px;
+      line-height:1.15;
+    }
+
+    @media(max-width:480px){
+      h1{font-size:30px}
+    }
+
+    h2{margin:0 0 10px}
+
+    .sub{
+      color:var(--muted);
+      margin:0 0 18px;
+      font-size:17px;
+    }
+
+    .cta{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+
+    .btn{
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:700;
+      border:1px solid var(--line);
+      background:#fff;
+      cursor:pointer;
+    }
+
+    .btn.primary{
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      border:none;
+    }
+
+    .tags{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+
+    .tag{
+      padding:6px 12px;
+      border-radius:999px;
+      background:#f2f2f2;
+      font-size:13px;
+      color:#555;
+    }
+
+    .section{padding:26px 0}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    .image{
+      width:100%;
+      height:220px;
+      border-radius:18px;
+      background:#ddd center/cover no-repeat;
+      margin-bottom:14px;
+    }
+
+    footer{
+      margin-top:30px;
+      padding-top:20px;
+      border-top:1px solid var(--line);
+      font-size:13px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Slimtrimlifestyle with Mona</div>
+    <div>
+      <a href="#wellness">Wellness</a> ·
+      <a href="#business">Business</a> ·
+      <a href="#about">About</a> ·
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="card">
+      <h1>Wellness. Balance.<br/>A lifestyle that supports you.</h1>
+      <p class="sub">
+        Supporting women & men on their wellness journey – from weight balance
+        and everyday energy to skin, hair and inner wellbeing.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="mailto:monakhan557@gmail.com">Contact Mona</a>
+        <a class="btn" href="https://linktr.ee/Mona1611" target="_blank">Linktree</a>
+      </div>
+
+      <div class="tags">
+        <span class="tag">Weight balance</span>
+        <span class="tag">Women & pregnancy</span>
+        <span class="tag">Skin & hair care</span>
+        <span class="tag">OPC & nutrition</span>
+        <span class="tag">Wellness lifestyle</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- PLACEHOLDER IMAGE -->
+      <div class="image" style="background-image:url('https://images.unsplash.com/photo-1506086679525-9c7c7d2c9c2b?auto=format&fit=crop&w=1200&q=80')"></div>
+      <p class="sub">
+        Carefully selected, lab-tested wellness products designed to support
+        everyday balance – combined with guidance and lifestyle coaching.
+      </p>
+    </div>
+  </section>
+
+  <!-- WELLNESS -->
+  <section id="wellness" class="section">
+    <div class="card">
+      <h2>Wellness & Nutrition Support</h2>
+      <div class="grid">
+        <div>
+          <div class="image" style="background-image:url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80')"></div>
+          <p class="sub">
+            Support for weight balance, metabolism and daily routines.
+          </p>
+        </div>
+        <div>
+          <div class="image" style="background-image:url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80')"></div>
+          <p class="sub">
+            Skin, hair & self-care support for inner and outer wellbeing.
+          </p>
+        </div>
+        <div>
+          <div class="image" style="background-image:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80')"></div>
+          <p class="sub">
+            Lifestyle-focused nutrition concepts including OPC-based support.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS -->
+  <section id="business" class="section">
+    <div class="card">
+      <h2>Work from Home · Travel & Earn</h2>
+      <p class="sub">
+        Build a flexible lifestyle business through a commission-based system.
+        Create income streams, grow a team and work from anywhere.
+      </p>
+
+      <div class="grid">
+        <div>
+          <p class="sub"><strong>Flexible entry</strong><br/>Start independently and grow at your own pace.</p>
+        </div>
+        <div>
+          <p class="sub"><strong>Team-based income</strong><br/>Build and mentor a team for long-term growth.</p>
+        </div>
+        <div>
+          <p class="sub"><strong>Lifestyle freedom</strong><br/>Travel, work online and design your schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="card">
+      <h2>About Mona</h2>
+      <p class="sub">
+        Mona supports people on their wellness and lifestyle journey using
+        modern nutrition concepts, daily routines and a holistic approach.
+        Her focus is on balance, consistency and sustainable habits.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="card">
+      <h2>Contact</h2>
+      <p class="sub">
+        Get in touch for wellness support or business opportunities.
+      </p>
+      <a class="btn primary" href="mailto:monakhan557@gmail.com">monakhan557@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Slimtrimlifestyle with Mona · All rights reserved
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
